@@ -1,0 +1,30 @@
+{
+	"name": "react-wireframe-components-competa",
+	"version": "0.0.1",
+	"description": "Wireframe components for Competa IT interns",
+	"main": "build/index.js",
+	"peerDependencies": {
+		"react": "^15.5.4"
+	},
+	"dependencies": {
+		"react": "^15.5.4",
+		"webpack": "^2.6.1"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "webpack --watch",
+		"build": "webpack"
+	},
+	"author": {
+		"name": "Stijn Hoogenboom & Leon van der Noll",
+		"email": "info.shinebrothers@gmail.com"
+	},
+	"devDependencies": {
+		"babel-cli": "^6.24.1",
+		"babel-core": "^6.24.1",
+		"babel-loader": "^7.0.0",
+		"babel-plugin-transform-object-rest-spread": "^6.23.0",
+		"babel-plugin-transform-react-jsx": "^6.24.1",
+		"babel-preset-env": "^1.5.1"
+	}
+}
