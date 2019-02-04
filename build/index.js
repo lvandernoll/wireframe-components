@@ -64,7 +64,7 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -84,7 +84,31 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var TestTwo = function TestTwo(props) {
+	return _react2.default.createElement(
+		'div',
+		props,
+		'TestTwo!'
+	);
+};
+exports.default = TestTwo;
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
 
 var _react = __webpack_require__(0);
 
@@ -92,36 +116,43 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+var Test = function Test(props) {
+	return _react2.default.createElement(
+		'div',
+		props,
+		'Test!'
+	);
+};
+exports.default = Test;
 
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+"use strict";
 
-var Wireframe = function (_React$Component) {
-	_inherits(Wireframe, _React$Component);
 
-	function Wireframe() {
-		_classCallCheck(this, Wireframe);
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+exports.TestTwo = exports.Test = undefined;
 
-		return _possibleConstructorReturn(this, (Wireframe.__proto__ || Object.getPrototypeOf(Wireframe)).apply(this, arguments));
-	}
+var _react = __webpack_require__(0);
 
-	_createClass(Wireframe, [{
-		key: 'render',
-		value: function render() {
-			return _react2.default.createElement(
-				'div',
-				null,
-				'Hello World!'
-			);
-		}
-	}]);
+var _react2 = _interopRequireDefault(_react);
 
-	return Wireframe;
-}(_react2.default.Component);
+var _Test = __webpack_require__(2);
 
-exports.default = Wireframe;
+var _Test2 = _interopRequireDefault(_Test);
+
+var _TestTwo = __webpack_require__(1);
+
+var _TestTwo2 = _interopRequireDefault(_TestTwo);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.Test = _Test2.default;
+exports.TestTwo = _TestTwo2.default;
 
 /***/ })
 /******/ ]);

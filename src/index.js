@@ -1,9 +1,8 @@
 import React from 'react';
-class Wireframe extends React.Component {
-	render() {
-		return (
-			<div>Hello World!</div>
-		);
-	}
-}
-export default Wireframe;
+import Test from './components/Test';
+import TestTwo from './components/TestTwo';
+
+export {
+	Test,
+	TestTwo,
+};
