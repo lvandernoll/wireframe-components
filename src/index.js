@@ -1,8 +1,6 @@
 import React from 'react';
-import Test from './components/Test';
-import TestTwo from './components/TestTwo';
+import Section from './components/Section';
 
 export {
-	Test,
-	TestTwo,
+	Section,
 };

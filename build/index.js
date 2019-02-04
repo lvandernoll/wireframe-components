@@ -64,7 +64,7 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -84,20 +84,26 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _style = __webpack_require__(4);
+
+var _style2 = _interopRequireDefault(_style);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var TestTwo = function TestTwo(props) {
-	return _react2.default.createElement(
-		'div',
-		props,
-		'TestTwo!'
-	);
+var Section = function Section(props) {
+	var overwriteStyle = props.style ? props.style : {};
+	var giveProps = Object.assign({}, props);
+	delete giveProps.style;
+
+	return _react2.default.createElement('section', _extends({ style: Object.assign(_style2.default.section, overwriteStyle) }, giveProps));
 };
-exports.default = TestTwo;
+exports.default = Section;
 
 /***/ }),
 /* 2 */
@@ -109,24 +115,23 @@ exports.default = TestTwo;
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
+exports.Section = undefined;
 
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _Section = __webpack_require__(1);
+
+var _Section2 = _interopRequireDefault(_Section);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Test = function Test(props) {
-	return _react2.default.createElement(
-		'div',
-		props,
-		'Test!'
-	);
-};
-exports.default = Test;
+exports.Section = _Section2.default;
 
 /***/ }),
-/* 3 */
+/* 3 */,
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -135,24 +140,11 @@ exports.default = Test;
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
-exports.TestTwo = exports.Test = undefined;
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _Test = __webpack_require__(2);
-
-var _Test2 = _interopRequireDefault(_Test);
-
-var _TestTwo = __webpack_require__(1);
-
-var _TestTwo2 = _interopRequireDefault(_TestTwo);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.Test = _Test2.default;
-exports.TestTwo = _TestTwo2.default;
+exports.default = {
+	section: {
+		margin: '50px 0'
+	}
+};
 
 /***/ })
 /******/ ]);
