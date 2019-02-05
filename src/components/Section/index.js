@@ -1,13 +1,7 @@
 import React, { Component } from 'react';
-import style from './style.js';
+import style from './style.scss';
 
-const Section = props => {
-	let overwriteStyle = props.style ? props.style : {};
-	let giveProps = Object.assign({}, props);
-	delete giveProps.style;
-
-	return (
-		<section style={Object.assign(style.section, overwriteStyle)} {...giveProps} />
-	)
-};
+const Section = props => (
+	<section class={style.section} {...props} />
+)
 export default Section;

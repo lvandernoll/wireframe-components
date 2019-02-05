@@ -1,4 +1,14 @@
 var path = require('path');
+const CSSLOADER = {
+	loader: "css-loader",
+	options: {
+		modules: true,
+		sourceMap: true,
+		context: '/',
+		localIdentName: "[local]___[hash:base64:5]"
+	}
+}
+
 module.exports = {
 	entry: './src/index.js',
 	output: {
@@ -19,6 +29,14 @@ module.exports = {
 					},
 				},
 			},
+			{
+				test: /\.scss$/,
+				use: [
+					"style-loader", // creates style nodes from JS strings
+					CSSLOADER, // translates CSS into CommonJS
+					"sass-loader" // compiles Sass to CSS, using Node Sass by default
+				]
+			}
 		],
 	},
 	externals: {

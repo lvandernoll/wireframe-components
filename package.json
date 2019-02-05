@@ -8,7 +8,7 @@
 	},
 	"dependencies": {
 		"react": "^15.5.4",
-		"webpack": "^2.6.1"
+		"webpack": "^2.7.0"
 	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
@@ -25,6 +25,10 @@
 		"babel-loader": "^7.0.0",
 		"babel-plugin-transform-object-rest-spread": "^6.23.0",
 		"babel-plugin-transform-react-jsx": "^6.24.1",
-		"babel-preset-env": "^1.5.1"
+		"babel-preset-env": "^1.5.1",
+		"css-loader": "^2.1.0",
+		"node-sass": "^4.11.0",
+		"sass-loader": "^7.1.0",
+		"style-loader": "^0.23.1"
 	}
 }
