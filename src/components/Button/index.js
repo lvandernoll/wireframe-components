@@ -1,20 +1,11 @@
 import React from 'react';
 import style from './styles.scss';
 
-import Basic from './basic'
-import Footer from './form'
-import Form from './footer'
-
-const Button = props => {
-  return (
-    <>
-      {props.type === 'basic' && <Basic {...props} />}
-      {props.type === 'footer' && <Footer {...props} />}
-      {props.type === 'form' && <Form {...props} />}
-    </>
-  )
-}
-
-
+const Button = props => (
+	<div>
+		{props.type === 'basic' && <button className={style.button}></button>}
+		{props.type === 'white' && <button className={[style.button, style.buttonwhite].join(' ')}></button>}
+	</div>
+)
 
 export default Button
