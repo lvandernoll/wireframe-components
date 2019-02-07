@@ -1,0 +1,29 @@
+@import '../../styles/_variables.scss';
+
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: $font;
+	font-size: 1.4rem;
+	color: $white;
+	background-color: $darkgrey;
+	padding: 25px;
+}
+
+.cubeWrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	height: 150px;
+}
+
+.title {
+	text-align: center;
+}
+
+.cube {
+	height: 100px;
+	width: 90px;
+}
