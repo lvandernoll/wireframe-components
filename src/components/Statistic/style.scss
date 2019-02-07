@@ -19,16 +19,16 @@
 .bar {
 	height: 5px;
 	transition: width 1s;
-}
 
-.filledBar {
-	width: 50%;
-	border-radius: 25px 0 0 25px;
-	background-color: $darkgrey;
-}
+	&Filled {
+		width: 50%;
+		border-radius: 25px 0 0 25px;
+		background-color: $darkgrey;
+	}
 
-.emptyBar {
-	width: 50%;
-	border-radius: 0 25px 25px 0;
-	background-color: $lightgrey;
+	&Empty {
+		width: 50%;
+		border-radius: 0 25px 25px 0;
+		background-color: $lightgrey;
+	}
 }

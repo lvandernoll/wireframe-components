@@ -1,12 +1,17 @@
 @import '../../styles/variables';
 
 .button {
+	outline: none;
 	width: 200px;
 	height: 50px;
 	background: $darkgrey;
-	border: 1px solid $white;
+	border: none;
 
-	&white {
+	&DarkBorder {
+		border: 1px solid $white;
+	}
+
+	&White {
 		background: $white;
 		border: 1px solid $darkgrey;
 	}

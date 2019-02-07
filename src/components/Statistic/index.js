@@ -8,14 +8,6 @@ class Statistic extends Component {
 		this.state = {
 			progress: 0,
 		};
-
-		this.setFilledBarRef = element => {
-			this.filledBar = element;
-		}
-
-		this.setEmptyBarRef = element => {
-			this.emptyBar = element;
-		}
 	}
 
 
@@ -32,8 +24,8 @@ class Statistic extends Component {
 			<div className={`${style.wrapper} ${this.props.className || ''}`}>
 				<span>{this.props.title}</span>
 				<div className={style.barsWrapper}>
-					<div ref={this.setFilledBarRef} className={`${style.bar} ${style.filledBar}`} style={{width: `${this.state.progress}%`}} />
-					<div ref={this.setEmptyBarRef} className={`${style.bar} ${style.emptyBar}`} style={{width: `${100 - this.state.progress}%`}} />
+					<div className={`${style.bar} ${style.barFilled}`} style={{width: `${this.state.progress}%`}} />
+					<div className={`${style.bar} ${style.barEmpty}`} style={{width: `${100 - this.state.progress}%`}} />
 				</div>
 			</div>
 		);
