@@ -22,7 +22,7 @@ class Statistic extends Component {
 	render() {
 		return (
 			<div className={`${style.wrapper} ${this.props.className || ''}`}>
-				<span>{this.props.title}</span>
+				<span className={style.title}>{this.props.title}</span>
 				<div className={style.barsWrapper}>
 					<div className={`${style.bar} ${style.barFilled}`} style={{width: `${this.state.progress}%`}} />
 					<div className={`${style.bar} ${style.barEmpty}`} style={{width: `${100 - this.state.progress}%`}} />
