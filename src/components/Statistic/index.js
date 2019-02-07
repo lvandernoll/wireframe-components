@@ -36,7 +36,7 @@ class Statistic extends Component {
 					<div ref={this.setEmptyBarRef} className={`${style.bar} ${style.emptyBar}`} style={{width: `${100 - this.state.progress}%`}} />
 				</div>
 			</div>
-		)
+		);
 	}
 }
 export default Statistic;

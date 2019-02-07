@@ -4,10 +4,10 @@
 	"description": "Wireframe components for Competa IT interns",
 	"main": "build/index.js",
 	"peerDependencies": {
-		"react": "^15.5.4"
+		"react": "^16.8.1"
 	},
 	"dependencies": {
-		"react": "^15.5.4",
+		"react": "^16.8.1",
 		"webpack": "^2.7.0"
 	},
 	"scripts": {
