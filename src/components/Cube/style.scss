@@ -16,14 +16,14 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
-	height: 150px;
+	height: 165px;
 }
 
 .title {
 	text-align: center;
+	word-break: break-word;
 }
 
 .cube {
-	height: 100px;
-	width: 90px;
+	width: 50%;
 }
