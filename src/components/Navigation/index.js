@@ -3,8 +3,8 @@ import style from './style.scss';
 
 const Navigation = props => {
 	let items = [];
-	props.children.forEach(child => {
-		items.push(<li className={style.item}>{child}</li>)
+	props.children.forEach((child, i) => {
+		items.push(<li className={style.item} key={i}>{child}</li>)
 	});
 	return (
 		<nav className={props.className || ''}>
