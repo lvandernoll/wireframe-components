@@ -1,0 +1,32 @@
+@import './default.scss';
+
+.form {
+	height: 700px;
+	justify-content: space-around;
+}
+
+.block {
+	&First {
+		width: 100%;
+		height: 50%;
+	}
+
+	&Second {
+		height: 41%;
+		margin-top: 21.5px;
+	}
+}
+
+.input {
+	&Wrapper {
+		flex-direction: column;
+	}
+
+	&Small {
+		width: 90%;
+	}
+
+	&Big {
+		width: 97%;
+	}
+}

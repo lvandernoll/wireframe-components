@@ -1,0 +1,53 @@
+@import '../../styles/_variables.scss';
+
+.form {
+	display: flex;
+	flex-direction: column;
+	height: 300px;
+}
+
+.block {
+	height: 100%;
+	
+	&First {
+		width: 45%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	&Second {
+		width: 57%;
+	}
+}
+
+.input {
+	border: none;
+	outline: none;
+	background-color: $lightgrey;
+	font-family: $font;
+	font-size: 1.5rem;
+	color: $darkgrey;
+
+	&Wrapper {
+		height: 100%;
+		display: flex;
+	}
+	
+	&Small {
+		padding: 0 5%;
+		width: 82.5%;
+		height: 20%;
+	}
+
+	&Big {
+		padding: 1.5%;
+		resize: none;
+	}
+}
+
+.button {
+	align-self: flex-end;
+	margin-top: 20px;
+	height: 60px;
+}

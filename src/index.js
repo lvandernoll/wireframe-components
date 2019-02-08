@@ -6,6 +6,7 @@ import Section from './components/Section';
 import Navigation from './components/Navigation';
 import Headline from './components/Headline';
 import Subtitle from './components/Subtitle';
+import Form from './components/Form';
 
 export {
 	Button,
@@ -15,4 +16,5 @@ export {
 	Navigation,
 	Headline,
 	Subtitle,
+	Form,
 };
