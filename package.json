@@ -2,6 +2,7 @@
 	"name": "react-wireframe-components-competa",
 	"version": "0.0.1",
 	"description": "Wireframe components for Competa IT interns",
+	"homepage": "https://github.com/lvandernoll/wireframe-components",
 	"main": "build/index.js",
 	"peerDependencies": {
 		"react": "^16.8.1"
